@@ -1,4 +1,4 @@
-# 📊 BlinkIT Grocery BI Dashboard Analysis
+# 📊 Blinkit Grocery BI Dashboard Analysis
 
 ---
 

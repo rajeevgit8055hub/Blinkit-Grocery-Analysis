@@ -60,8 +60,6 @@ The dashboard includes four key performance indicators that update dynamically:
 - 🟡 **Number of Items Sold** – Total SKUs moved.
 - 🔴 **Average Rating** – Customer satisfaction across product types.
 
----
-
 ### 2. Total Sales by Fat Content
 
 A doughnut chart displays sales distribution between Regular and Low Fat items, showing a near 50-50 split. This balanced preference provides insight into customer health awareness and informs future product stocking.
@@ -162,15 +160,16 @@ This project demonstrates how BI tools like Power BI can directly influence stra
 
 ## 🖼️ Dashboard Snapshot
 
-### 🖥️ Power BI Dashboard View
+_Above: A sample view of the final dashboard showing KPIs, outlet-level charts, and product-level insights._
 
-![BlinkIT Grocery Dashboard](BlinkIT%20Grocery%20Data.png)
+### 🖥️ Blinkit Dashboard View
+
+![Blinkit Grocery Dashboard](BlinkIT%20Grocery%20Data.png)
 
 ---
 
 ### 🗂️ Project Preview Snapshot
 
-![BlinkIT Grocery Project Preview](BlinkIT%20Grocery%20Data1.png) 
-_Above: A sample view of the final dashboard showing KPIs, outlet-level charts, and product-level insights._
+![Blinkit Grocery Project Preview](BlinkIT%20Grocery%20Data1.png) 
 
 ---

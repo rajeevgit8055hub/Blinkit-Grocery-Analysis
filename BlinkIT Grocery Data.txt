@@ -1,0 +1,186 @@
+🟨 Slide 1: Project Title Slide
+Title: BlinkIT Grocery Analysis – Power BI Dashboard
+Subtitle: Sales, Ratings & Inventory Insights for Smarter Decisions
+Presented by: Rajeev Tiwari
+Date: [Insert Date]
+
+🟨 Slide 2: Project Objective
+Objective:
+To conduct a comprehensive analysis of BlinkIT’s grocery performance, including sales, customer satisfaction, and inventory trends. This project uses Power BI to uncover actionable insights through interactive visualizations and well-defined KPIs.
+
+🟨 Slide 3: Business Problem
+Business Challenges Identified:
+🔸 Lack of visibility into which product types perform best
+🔸 No clear understanding of how fat content affects sales
+🔸 Inconsistent insight on outlet performance based on size, type, and location
+🔸 Need to correlate inventory items with customer satisfaction
+🔸 Absence of a centralized system to view KPIs like average sales and ratings
+
+🟨 Slide 4: Proposed Solution
+Solution Strategy:
+✅ Import, clean, and process data from BlinkIT database
+✅ Build DAX measures for dynamic KPI calculations
+✅ Visualize relationships between sales, outlet types, and inventory
+✅ Develop an interactive Power BI dashboard with slicers and filters
+✅ Summarize actionable insights to guide strategic decisions
+
+🟨 Slide 5: Project Lifecycle Steps
+📌 Requirement Gathering – Understanding BlinkIT’s goals
+
+📊 Data Walkthrough – Exploring raw sales and inventory files
+
+🔌 Data Connection – Power BI data integration
+
+🧹 Data Cleaning – Checking for missing values and duplicates
+
+🧠 Data Modeling – Defining relationships between tables
+
+⚙️ Data Processing – Applying transformations
+
+➕ DAX Calculations – Creating KPIs: AVG SALES, TOTAL SALES, etc.
+
+🖼️ Dashboard Layout – Designing clean layout with slicers
+
+📈 Chart Development – Using funnel, bar, doughnut, and matrix visuals
+
+🧩 Report Building – Integrating filters and interactive views
+
+🔍 Insight Generation – Deriving trends and strategies
+
+🟨 Slide 6: KPI Metrics Defined
+KPI	Description
+🟢 Total Sales	Total revenue generated from all items sold
+🔵 Average Sales	Average revenue per sale
+🟡 Number of Items	Total count of different SKUs sold
+🔴 Average Rating	Average customer satisfaction per item
+
+🟨 Slide 7: Chart 1 – Total Sales by Fat Content
+Objective:
+To analyze the impact of fat content on total sales.
+
+Chart Type: Doughnut Chart
+
+Insights:
+
+Regular and Low Fat have nearly equal contributions (~50%)
+
+Suggests balanced consumer preference for fat content
+
+Helps determine product development focus
+
+🟨 Slide 8: Chart 2 – Average Sales by Item Type
+Objective:
+To identify which product types generate the highest average sales.
+
+Chart Type: Horizontal Bar Chart
+
+Insights:
+
+Dairy, Household, and Snack Foods top the list
+
+Baked Goods and Health items show lower avg sales
+
+Useful for inventory optimization and promotions
+
+🟨 Slide 9: Chart 3 – Fat Content by Outlet
+Objective:
+To compare total sales across outlets, segmented by fat content.
+
+Chart Type: Stacked Column Chart
+
+Insights:
+
+All outlet types show balanced performance
+
+Slight variations in fat preferences across locations
+
+Can be leveraged for personalized regional stocking
+
+🟨 Slide 10: Chart 4 – Total Sales by Outlet Establishment Year
+Objective:
+To evaluate how the year of establishment affects sales growth.
+
+Chart Type: Line/Waterfall Chart
+
+Insights:
+
+Outlets established in 2017 onward show rapid growth
+
+Total sales have increased consistently with new outlets
+
+Highlights the importance of expanding modern stores
+
+🟨 Slide 11: Chart 5 – Sales by Outlet Size
+Objective:
+To analyze how outlet size influences sales figures.
+
+Chart Type: Pie/Doughnut Chart
+
+Insights:
+
+Tier 2 contributes the most (369.28K), followed by Tier 3
+
+Smaller Tier 1 outlets generate the least
+
+Suggests better performance from mid-sized outlets
+
+🟨 Slide 12: Chart 6 – Sales by Outlet Location
+Objective:
+To study geographic sales distribution across outlet tiers.
+
+Chart Type: Funnel Chart
+
+Insights:
+
+Sales funnel shows Tier 2 at the top, Tier 1 at the bottom
+
+Opportunity to improve visibility in Tier 1 regions
+
+Could drive marketing strategies by tier-wise sales
+
+🟨 Slide 13: Chart 7 – All Metrics by Outlet Type
+Objective:
+To provide a consolidated view of key metrics per outlet type.
+
+Chart Type: Matrix Card Table
+
+Insights:
+
+Outlet Type	Total Sales	Avg Sales	No. of Items	Avg Rating	Item Visibility
+Grocery Store	74,251.71	141.16	526	3.93	56.31
+Supermarket Type 1	7,39,886.89	139.92	5235	3.92	338.65
+Supermarket Type 2	1,22,388.20	142.08	863	3.93	56.62
+Total	936,526.79	141.38	6624	3.92	451.58
+
+🟨 Slide 14: Key Insights & Observations
+📌 Balanced sales between low and regular fat products
+📌 Dairy and snack food categories are high performers
+📌 Outlet establishment year strongly influences sales volume
+📌 Tier 2 locations dominate overall sales
+📌 Supermarket Type 1 stores handle the highest volume and visibility
+📌 Item visibility metrics reveal opportunities for shelf optimization
+
+🟨 Slide 15: Conclusion
+✅ BlinkIT shows a well-balanced inventory-to-sales ratio
+✅ Regional outlet strategy is yielding visible performance gains
+✅ KPI-based approach provides clarity in inventory and marketing
+✅ Power BI dashboard offers a dynamic and decision-support system
+✅ Recommended to focus on high-performing categories and Tier 2 expansion
+
+🟨 Slide 16: Final Dashboard Snapshot
+Title: BlinkIT Power BI Dashboard
+Features:
+
+Interactive filters (outlet location, size, item type)
+
+KPI cards for quick overview
+
+Visuals: Doughnut, Funnel, Bar, Matrix, Waterfall
+
+Insights into fat content, outlet tiers, product types
+
+📷 (Insert your final dashboard image here – already provided)
+
+🟨 Slide 17: Thank You
+Thank you for your attention!
+For feedback, improvements, or project collaboration:

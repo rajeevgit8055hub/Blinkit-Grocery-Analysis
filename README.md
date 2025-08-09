@@ -1,4 +1,4 @@
-# 🛒 Blinkit Grocery BI Dashboard Analysis
+# 🛒 BlinkIT Grocery BI Dashboard Analysis
 
 ---
 
@@ -28,8 +28,6 @@ The main objective is to build a centralized business intelligence solution usin
 
 ## 🔍 Target Audience
 
-This dashboard caters to various roles within the business:
-
 - **Operations Managers** to monitor outlet efficiency and inventory flow.
 - **Marketing Teams** to design campaigns targeting high-performing SKUs.
 - **Sales Executives** to track regional and outlet-level performance.
@@ -38,8 +36,6 @@ This dashboard caters to various roles within the business:
 ---
 
 ## 🛑 Business Problems Addressed
-
-Before this solution, BlinkIT faced multiple analytical blind spots:
 
 - ❌ No consolidated view of KPIs such as average sales or customer ratings.
 - ❌ Lack of insight into how fat content affected item performance.
@@ -53,49 +49,46 @@ Before this solution, BlinkIT faced multiple analytical blind spots:
 
 ### 1. KPI Cards
 
-The dashboard includes four key performance indicators that update dynamically:
-
 - 🟢 **Total Sales** – Overall revenue from all items sold.
 - 🔵 **Average Sales** – Revenue per transaction or item.
 - 🟡 **Number of Items Sold** – Total SKUs moved.
 - 🔴 **Average Rating** – Customer satisfaction across product types.
 
 ### 2. Total Sales by Fat Content
-
-A doughnut chart displays sales distribution between Regular and Low Fat items, showing a near 50-50 split. This balanced preference provides insight into customer health awareness and informs future product stocking.
+A doughnut chart displays sales distribution between Regular and Low Fat items, showing a near 50-50 split.
 
 ### 3. Average Sales by Item Type
-
-A horizontal bar chart breaks down performance by item categories. Dairy, Household, and Snack Foods outperform others, while Baked Goods and Health items show lower engagement, highlighting opportunities for promotional efforts or repricing.
+Dairy, Household, and Snack Foods outperform others; Baked Goods and Health items show lower engagement.
 
 ### 4. Sales by Fat Content & Outlet Type
-
-Using a stacked column chart, this visual explores how various outlet types perform relative to product fat content. The data reveals consistent performance across outlet formats with slight regional fat preference shifts, supporting more localized stocking decisions.
+Stacked column chart revealing consistent performance across outlet formats with slight regional preferences.
 
 ### 5. Sales by Outlet Establishment Year
-
-A line or waterfall chart visualizes sales growth based on the year each outlet was opened. Outlets launched after 2017 contribute heavily to revenue, proving that newer infrastructure aligns well with customer demand.
+Line chart showing post-2017 outlets contributing heavily to revenue.
 
 ### 6. Sales by Outlet Size
-
-This pie or doughnut chart identifies that Tier 2 outlets lead sales with ₹369.28K, outperforming both Tier 1 and Tier 3. This trend suggests BlinkIT should prioritize mid-sized outlets for expansion.
+Tier 2 outlets lead sales with ₹369.28K, outperforming Tier 1 and Tier 3.
 
 ### 7. Sales by Outlet Location
-
-Using a funnel chart, the dashboard shows sales volume distribution across Tier 1, Tier 2, and Tier 3 locations. Tier 2 outlets dominate, while Tier 1 underperforms, indicating untapped potential in more urban zones.
+Tier 2 outlets dominate sales; Tier 1 shows untapped potential.
 
 ### 8. All Metrics by Outlet Type
 
-A matrix table summarizes key metrics by outlet format:
-
 | Outlet Type         | Total Sales | Avg Sales | No. of Items | Avg Rating | Item Visibility |
-|---------------------|-------------|-----------|--------------|-------------|------------------|
-| Grocery Store       | ₹74,251.71  | 141.16    | 526          | 3.93        | 56.31           |
-| Supermarket Type 1  | ₹739,886.89 | 139.92    | 5,235        | 3.92        | 338.65          |
-| Supermarket Type 2  | ₹122,388.20 | 142.08    | 863          | 3.93        | 56.62           |
-| **Total**           | ₹936,526.79 | 141.38    | 6,624        | 3.92        | 451.58          |
+|---------------------|-------------|-----------|--------------|------------|-----------------|
+| Grocery Store       | ₹74,251.71  | 141.16    | 526          | 3.93       | 56.31           |
+| Supermarket Type 1  | ₹739,886.89 | 139.92    | 5,235        | 3.92       | 338.65          |
+| Supermarket Type 2  | ₹122,388.20 | 142.08    | 863          | 3.93       | 56.62           |
+| **Total**           | ₹936,526.79 | 141.38    | 6,624        | 3.92       | 451.58          |
 
-This matrix offers a consolidated performance view, helping identify which outlet models drive volume, satisfaction, and visibility.
+---
+
+## 📊 Data Sources & Description
+
+- **Sales Dataset** – Detailed transactions including item type, fat content, outlet size, sales value, ratings, and visibility.  
+- **Outlet Dataset** – Information on outlet location, type, and establishment year.  
+- **CSV Format** – Raw data imported from `.csv` files.  
+- **Cleaned Data** – Post Power Query transformations ensuring accuracy and consistency.
 
 ---
 
@@ -114,47 +107,79 @@ This matrix offers a consolidated performance view, helping identify which outle
 
 ---
 
+## ⚙️ Data Modeling Approach
+
+- **Schema** – Star Schema for optimized querying and relationships.  
+- **Fact Table** – Sales data containing transactional measures.  
+- **Dimension Tables** – Outlet, Item, and Location details.  
+- **Relationships** – One-to-many and many-to-one relations based on IDs.
+
+---
+
+## 🧮 DAX Measures Implemented
+
+- **Total Sales** = `SUM(Sales)`  
+- **Average Sales** = `DIVIDE(SUM(Sales), COUNTROWS(Sales))`  
+- **Average Rating** = `AVERAGE(Rating)`  
+- **Item Count** = `COUNT(Item_Identifier)`  
+- **Sales by Fat Content** = Conditional SUM by category.
+
+---
+
 ## 📈 Key Business Takeaways
 
-- ✅ **Balanced Fat Content Demand** – Suggests maintaining variety in product nutrition profiles.
-- ✅ **Top Performers** – Dairy and snack items lead in both volume and revenue.
-- ✅ **Modern Outlets Win** – Newer stores (post-2017) show higher sales velocity.
-- ✅ **Tier 2 Locations** – Most profitable; ideal for future expansion.
-- ✅ **Supermarket Type 1** – Delivers highest item visibility and revenue.
-- ✅ **Shelf Visibility** – Directly impacts customer engagement and satisfaction.
+- ✅ **Balanced Fat Content Demand** – Maintain variety in nutrition profiles.
+- ✅ **Top Performers** – Dairy and snack items lead in revenue.
+- ✅ **Modern Outlets Win** – Post-2017 outlets show higher sales velocity.
+- ✅ **Tier 2 Locations** – Most profitable; ideal for expansion.
+- ✅ **Supermarket Type 1** – Highest item visibility and revenue.
+- ✅ **Shelf Visibility Impact** – Direct correlation with customer engagement.
 
 ---
 
 ## 📚 Tools & Technologies Used
 
-- **Power BI Desktop** – Report creation and dashboard publishing  
+- **Power BI Desktop** – Report creation and publishing  
 - **Power Query** – Data cleaning and transformation  
 - **DAX (Data Analysis Expressions)** – Calculated fields and KPIs  
 - **CSV / Excel** – Raw data sources  
-- **Star Schema Modeling** – Structured relational model  
+- **Star Schema Modeling** – Relational structure
 
 ---
 
 ## 🔚 Conclusion
 
-The BlinkIT Power BI dashboard transforms siloed operational data into a centralized decision-support system. It empowers key stakeholders with the ability to:
+The BlinkIT Power BI dashboard transforms siloed operational data into a centralized decision-support system. It empowers stakeholders to:
 
-- Align inventory with customer preferences using rating insights
-- Expand in high-performing regions like Tier 2 cities
-- Promote top-selling items for higher profitability
-- Optimize outlet types and stocking plans based on clear performance metrics
-
-This project demonstrates how BI tools like Power BI can directly influence strategic planning and operational efficiency in the retail grocery sector.
+- Align inventory with customer preferences using rating insights  
+- Expand in high-performing regions like Tier 2 cities  
+- Promote top-selling items for profitability  
+- Optimize outlet types and stocking plans
 
 ---
 
 ## 🚀 Future Scope
 
-- 🔮 Integrate predictive analytics for future sales forecasting  
-- 🧮 Add shelf-life and stock turnover insights  
-- 🗺️ Include geospatial outlet mapping and heatmaps  
-- 👥 Implement customer segmentation and loyalty scoring  
-- 📢 Track campaign performance with marketing filters  
+- 🔮 Predictive analytics for sales forecasting  
+- 🧮 Shelf-life and stock turnover insights  
+- 🗺️ Geospatial outlet mapping and heatmaps  
+- 👥 Customer segmentation and loyalty scoring  
+- 📢 Campaign performance tracking
+
+---
+
+## 📦 How to Use This Project
+
+1. **Download/Clone Repository**  
+2. Open `.pbix` file in **Power BI Desktop**  
+3. Connect your dataset or use sample data  
+4. Explore visuals and interact with filters
+5. 
+---
+
+## 📜 License
+
+This project is open-source for educational and portfolio purposes. Credit the author when reusing.
 
 ---
 
